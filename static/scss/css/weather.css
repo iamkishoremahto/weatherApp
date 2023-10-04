@@ -147,6 +147,7 @@ body .container-fluid .row .col .weather_wrapper .plus_icon input {
   outline: none;
   border-radius: 20px;
   padding-right: 45px;
+  padding-left: 10px;
 }
 body .container-fluid .row .col .weather_wrapper .plus_icon span {
   display: inline;

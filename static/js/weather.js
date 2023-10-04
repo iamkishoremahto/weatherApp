@@ -22,14 +22,14 @@ async function dayIndicatorHandler(){
     if(hours>0) dayIndicatorElement.style.top = '-13%';
 
     if(hours>=17){
-        dayIndicatorElement.src = '/static/images/moon.png'
+        dayIndicatorElement.src = 'static/images/moon.png'
         let allCircles = document.querySelectorAll('.circles div');
         allCircles[0].style.backgroundColor = '#595561'
         allCircles[1].style.backgroundColor = '#52505b';
         allCircles[2].style.backgroundColor = '#4d4955';
         allCircles[3].style.backgroundColor = '#46424b';
         allCircles[3].style.boxShadow = 'rgba(0, 0, 0, 0.35) 0px 5px 15px';
-        allCircles[4].style.backgroundImage = 'url(/static/images/nightSky.jpg)';
+        allCircles[4].style.backgroundImage = 'url(static/images/nightSky.jpg)';
         allCircles[4].style.backgroundSize = 'cover';
         let body = document.querySelector('body');
         body.style.backgroundColor = "#4d4955"
@@ -67,24 +67,24 @@ async function weatherIconHandler(weatherCondition){
 
     if (weatherCondition.includes("cloud")){
         if(currentSituation === "day"){
-            imageUrl = "/static/images/weather_icons/cloudy-day.svg"
+            imageUrl = "static/images/weather_icons/cloudy-day.svg"
         }
         else{
-            imageUrl = "/static/images/weather_icons/cloudy-night.svg"
+            imageUrl = "static/images/weather_icons/cloudy-night.svg"
         }
     }
 
     else if (weatherCondition.includes("rain")){
         
-        imageUrl = "/static/images/weather_icons/rainy-1.svg"
+        imageUrl = "static/images/weather_icons/rainy-1.svg"
           
     }
     else{
         if(currentSituation === "day"){
-            imageUrl = "/static/images/weather_icons/day.svg"
+            imageUrl = "static/images/weather_icons/day.svg"
         }
         else{
-            imageUrl = "/static/images/weather_icons/night.svg"
+            imageUrl = "static/images/weather_icons/night.svg"
         }
     }
 
