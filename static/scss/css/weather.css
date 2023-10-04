@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #96d6db;
+}
+body .container-fluid {
+  height: 100%;
+  padding: 0;
+}
+body .container-fluid .row {
+  width: 100%;
+  height: 100%;
+}
+body .container-fluid .row .col {
+  height: 100%;
+}
+body .container-fluid .row .col .weather_wrapper {
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 500px;
+  height: 700px;
+  flex-direction: column;
+  overflow: hidden;
+}
+body .container-fluid .row .col .weather_wrapper .time_indicator {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  top: -10%;
+}
+body .container-fluid .row .col .weather_wrapper .time_indicator .circles {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .container-fluid .row .col .weather_wrapper .time_indicator .circles div:nth-child(1) {
+  position: absolute;
+  background-color: #cfeef2;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  z-index: 10;
+}
+body .container-fluid .row .col .weather_wrapper .time_indicator .circles div:nth-child(2) {
+  position: absolute;
+  background-color: #b1e0e7;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  z-index: 9;
+}
+body .container-fluid .row .col .weather_wrapper .time_indicator .circles div:nth-child(3) {
+  position: absolute;
+  background-color: #96d6db;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  z-index: 8;
+}
+body .container-fluid .row .col .weather_wrapper .time_indicator .circles div:nth-child(4) {
+  position: absolute;
+  background-color: #79cad3;
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  z-index: 7;
+}
+body .container-fluid .row .col .weather_wrapper .time_indicator .circles div:nth-child(5) {
+  position: absolute;
+  background-color: #73bac7;
+  height: 1000px;
+  width: 1000px;
+  z-index: 6;
+}
+body .container-fluid .row .col .weather_wrapper .temp {
+  z-index: 20;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 60%;
+  bottom: 0;
+}
+body .container-fluid .row .col .weather_wrapper .temp .time {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 50px;
+  width: 100%;
+  padding: 10px;
+}
+body .container-fluid .row .col .weather_wrapper .temp .show_temp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+body .container-fluid .row .col .weather_wrapper .temp .show_temp #weather_icon {
+  height: 200px;
+  margin-bottom: -100px;
+  margin-top: -60px;
+}
+body .container-fluid .row .col .weather_wrapper .temp .show_temp #condition {
+  margin-top: 50px;
+}
+body .container-fluid .row .col .weather_wrapper .temp .show_temp .temp_font {
+  font-size: 5rem;
+  font-weight: 900;
+}
+body .container-fluid .row .col .weather_wrapper .plus_icon {
+  position: absolute;
+  z-index: 20;
+  font-size: 1.5rem;
+  padding: 5px;
+  top: 34%;
+  background-color: white;
+  width: 70%;
+  height: 60px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 20px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  transition: 0.2s;
+}
+body .container-fluid .row .col .weather_wrapper .plus_icon input {
+  font-size: 2rem;
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  padding-right: 45px;
+}
+body .container-fluid .row .col .weather_wrapper .plus_icon span {
+  display: inline;
+  position: absolute;
+  right: 5%;
+}
+
+#day_indicator {
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  z-index: 13;
+  top: 10%;
+  left: 0%;
+  bottom: -10px;
+  color: rgb(237, 218, 11);
+  font-size: 5rem;
+  z-index: 13;
+}
+
+#time {
+  margin-left: 10px;
+}

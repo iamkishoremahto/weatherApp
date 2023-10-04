@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/scss/css/weather.css">
+</head>
+<body class="d-flex align-items-center justify-content-center">
+    <div class="container-fluid justify-content-center d-flex align-items-center">
+        <div class="row weather_row justify-content-center d-flex align-items-center">
+            <div class="col weather_col justify-content-center d-flex align-items-center">
+                <div class="weather_wrapper justify-content-center d-flex align-items-center">
+                    <div class="time_indicator">
+                        
+                        <div class="circles">
+                        <div></div>
+                        <div>
+                         
+                         
+                          
+                        </div>
+                        <div id="outerDiv">
+                            <img id="day_indicator" src="/static/images/sun.png" alt="pic" class="img-fluid">
+                            <!-- <i id="day_indicator" class="fa-solid fa-sun"></i> -->
+                        </div>
+                        <div>
+                           
+                        </div>
+                        <div></div>
+                    </div>
+                    </div>
+                    <div class="temp">
+                       <div class="col-md-2 time">
+                       <div class="timeshow"><i class="fa-regular fa-clock"></i><span id="time"></span></div>
+                        <div class="location"><i class="fa-solid fa-location-dot"></i><span id="location"></span></div>
+                       </div>
+                       <div class="col-md-10 show_temp">
+                            <img src="" alt="weather_icon" id="weather_icon" class="img-fluid">
+
+                            <!-- <i id="weather_icon" class="fa-solid fa-sun"></i> -->
+                            <p id="condition">Clear,windy</p>
+                            <p class="temp_font" ><span id="temp"></span>&deg;</p>
+                            <p>Humidity <span id = "humidity"></span>&deg; </p>
+                            <p>Winds : <span id="wind_dir"> </span> <span id="wind_speed"> </span>MPH</p>
+                            
+
+                       
+                       </div>
+                    </div>
+                    <div id = "plus_icon" class="plus_icon">
+                        <!-- <i class="fa-solid fa-plus"></i> -->
+                        <input type="text"><span id="search"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/static/js/weather.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
